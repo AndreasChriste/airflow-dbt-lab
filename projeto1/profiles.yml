@@ -1,0 +1,46 @@
+#caso querira rodar localmente
+# projeto1:
+#   target: dev
+#   outputs:
+#     dev:
+#       dbname: airflow_dbt
+#       host: localhost
+#       pass: admin
+#       port: 5433
+#       schema: dev
+#       threads: 1
+#       type: postgres
+#       user: postgres
+
+#     prod:
+#       dbname: airflow_dbt
+#       host: localhost
+#       pass: admin
+#       port: 5433
+#       schema: prod
+#       threads: 1
+#       type: postgres
+#       user: postgres
+
+projeto1:
+  target: dev
+  outputs:
+    dev:
+      dbname: postgres
+      host: postgres        # nome do serviço no docker-compose
+      pass: postgres        # senha default do Astro
+      port: 5432
+      schema: dev
+      threads: 1
+      type: postgres
+      user: postgres
+
+    prod:
+      dbname: postgres
+      host: postgres
+      pass: postgres
+      port: 5432
+      schema: prod
+      threads: 1
+      type: postgres
+      user: postgres

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  # Serviço que executa dbt e scheduler
+  scheduler:
+    ports:
+      - "8081:8081"   # dbt docs
