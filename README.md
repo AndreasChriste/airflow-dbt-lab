@@ -43,13 +43,13 @@ Ao rodar é possivel identificar as dags existentes (**dbt_pipeline_dev** e  **d
 ## 4. Também é possível rodar manualmente cada uma das transformações criadas utilizando o **dbt**.  
    Para isso, siga os seguintes passos:
 
-    4.1. Abra o bash do Astronomer:
+4.1. Abra o bash do Astronomer:
    
    &emsp; **astro dev bash**
 
-    4.2. Dentro do bash, entre na pasta projeto1 e execute os comandos do dbt
+4.2. Dentro do bash, entre na pasta projeto1 e execute os comandos do dbt
    
-    &emsp; **dbt run --models <models/staging/stg_orders.sql> --target prod**
+&emsp; **dbt run --models <models/staging/stg_orders.sql> --target prod**
 
 ## 5. Além disso, é possivel rodar os testes, que realizam validações nas tabelas, nesse caso foram explorados testes de completude e unicidade explorando tanto teste que ocorrem com sucesso e outros com falha para explorar o comportamento da ferramenta. 
     ``` 
