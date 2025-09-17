@@ -23,7 +23,9 @@ O projeto não é para produção, mas sim um **laboratório de prática**, idea
 ## 🚀 Como configurar e rodar o projeto
 
 
-### 1. Baixar o CLI AStronomer
+### 1. instalar
+     CLI AStronomer
+     Docker desktop
 ### 2. Definir a porta do Postgres (evita conflito com a 5432(postgres) local):  
    
        astro config set postgres.port 5433
@@ -31,7 +33,7 @@ O projeto não é para produção, mas sim um **laboratório de prática**, idea
 
 ### 3. Start no projeto e  verificação das dags no airflow porta 8080
 
-        astro dev start
+        astro dev start --wait 5m
             
 Ao rodar é possivel identificar as dags existentes (**dbt_pipeline_dev** e  **dbt_pipeline_prod**) via Airflow UI: http://localhost:8080
 
